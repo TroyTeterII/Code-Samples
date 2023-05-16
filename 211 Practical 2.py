@@ -3,7 +3,7 @@
 import re
 import urllib.request
 #open web page
-web_page = urllib.request.urlopen("https://www.indiana.edu/news-events/index.html")
+web_page = urllib.request.urlopen("URL")
 contents = web_page.read() .decode(errors="replace")
 web_page.close()
 #sort with regular expression
@@ -25,7 +25,7 @@ for entry in articles:
             print(entry[11:-1])
 
 #opens web pages based on query
-if user_search=='Bloomington' or 'bloomington':
+if user_search=='CITY' or 'city':
     #can't get articles to open up tried webbrowser and urllib.open
-    urllib.urlopen('https://news.indiana.edu/released/iu/2016/03/ross-gay-kingsley-tufts-award.shtml')
-    urllib.urlopen("https://news.indiana.edu/released/iu.2016/02/health-programs-fair.shtml")
+    urllib.urlopen('URL')
+    urllib.urlopen("URL")
