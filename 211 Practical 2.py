@@ -23,9 +23,3 @@ for entry in articles:
         #fine articles with search query
         if user_search in entry:
             print(entry[11:-1])
-
-#opens web pages based on query
-if user_search=='CITY' or 'city':
-    #can't get articles to open up tried webbrowser and urllib.open
-    urllib.urlopen('URL')
-    urllib.urlopen("URL")
